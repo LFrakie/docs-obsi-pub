@@ -998,10 +998,10 @@
                 <h1 id="empezando">EMPEZANDO</h1>
 <h2 id="instalacion">INSTALACIÓN</h2>
 <p><strong>1.</strong> Primero instalaremos Ruby, que es un administrador de paquetes que usamos para instalar <strong>Jekyll</strong>:</p>
-<pre><code class="language-bash">sudo apt-get update
+<div class="highlight"><pre><span></span><code>sudo apt-get update
 sudo apt-get install software-properties-common -y
 sudo apt-get install ruby-full -y
-</code></pre>
+</code></pre></div>
 <p><strong>2.</strong> A continuación, para instalar jekyll, use los siguientes comandos:</p>
 <p><code>sudo gem install jekyll
 sudo gem install bundler</code></p>
@@ -1046,12 +1046,12 @@ sudo apt-get install g++-aarch64-linux-gnu</code></p>
 <li>Abrir Directorio Jekyll del proyecto</li>
 <li>Abra el archivo <code>config.yml</code> y agregamos el siguiente codigo. </li>
 </ol>
-<pre><code>`- jekyll-admin`
-</code></pre>
-<p><img alt="" src="ANEXOS/config-1.png.png" />
+<p><div class="highlight"><pre><span></span><code>`- jekyll-admin`
+</code></pre></div>
+<img alt="" src="ANEXOS/config-1.png.png" />
 3. Abrir <code>GemFile</code>  y añadir el siguiente codigo:</p>
-<pre><code>gem &quot;jekyll-admin
-</code></pre>
+<div class="highlight"><pre><span></span><code>gem &quot;jekyll-admin
+</code></pre></div>
 <p><img alt="" src="ANEXOS/config-2.png.png" />
 4. Ejecute el servidor:
 <code>bundle exec jekyll serve -H 0.0.0.0</code></p>
@@ -1067,9 +1067,8 @@ sudo apt-get install g++-aarch64-linux-gnu</code></p>
 <p>Font:  https://github.com/jekyll/jekyll/issues/7054 </p>
 <h4 id="jekyll-admin-not-found">jekyll-admin   |  Not Found</h4>
 <p>Otro pueda que sea por el tema de que falte instalar <strong>jekyll-admin</strong></p>
-<p>```
- gem install jekyll-admin</p>
-<p>```</p>
+<div class="highlight"><pre><span></span><code>gem install jekyll-admin
+</code></pre></div>
 <h3 id="bundle-install">bundle install</h3>
 <p>Es posible que necesitemos este comando para poder instalar las dependencias necesarias.
 <code>bundle install</code></p>
@@ -1078,9 +1077,9 @@ sudo apt-get install g++-aarch64-linux-gnu</code></p>
 <h2 id="jekyll-to-github-pages">Jekyll to GitHub Pages</h2>
 <h3 id="configuracion">Configuración</h3>
 <p>Subimos nuestro proyecto a nuestro repositorio como de costumbre desde la rama <strong>MASTER</strong> de nuestro repositorio, pero  antes debemos de tener la siguiente configuración en nuestro <strong>_config.yml</strong>  </p>
-<pre><code class="language-yml">baseurl: '/jekyll-mundana-deploy'
-url: 'https://lfrakie.github.io'
-</code></pre>
+<div class="highlight"><pre><span></span><code>baseurl: &#39;/jekyll-mundana-deploy&#39;
+url: &#39;https://lfrakie.github.io&#39;
+</code></pre></div>
 <p><strong>1</strong>. <strong>baseurl:</strong> "Aqui irá el nombre de nuestrorepositorio o subPath de nuestro sitio web ejem <strong>/jekyll-mundana-deploy</strong> " </p>
 <p><strong>2</strong>. <strong>url:</strong> "Aqui va la base host "</p>
 <p><img alt="" src="ANEXOS/jekill-to-gh1.png" /></p>

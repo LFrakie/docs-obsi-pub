@@ -657,6 +657,14 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#pip-install-mkdocs" class="md-nav__link">
+    pip install mkdocs
+
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#creando-un-nuevo-proyecto" class="md-nav__link">
     Creando un nuevo proyecto
   </a>
@@ -894,34 +902,33 @@
                 
                 <h2 id="instalacion">Instalación</h2>
 <p>Para instalar MkDocs, ejecute el siguiente comando desde la línea de comandos:</p>
-<pre><code class="language-bash">pip install mkdocs
-</code></pre>
-<hr />
+<h2 id="pip-install-mkdocs"><div class="highlight"><pre><span></span><code>pip install mkdocs
+</code></pre></div></h2>
 <h2 id="creando-un-nuevo-proyecto">Creando un nuevo proyecto</h2>
 <p>Comenzar es muy fácil. Para crear un nuevo proyecto, ejecute el siguiente comando desde la línea de comandos:</p>
-<pre><code class="language-bash">mkdocs new my-project
-cd my-project
-</code></pre>
-<p><img alt="" src="../ANEXOS/Pasted%20image%2020211023091120.png" /></p>
+<p><div class="highlight"><pre><span></span><code>mkdocs new my-project
+<span class="nb">cd</span> my-project
+</code></pre></div>
+<img alt="" src="../ANEXOS/Pasted%20image%2020211023091120.png" /></p>
 <p>Hay un solo archivo de configuración llamado <code>mkdocs.yml</code>y una carpeta nombrada <code>docs</code>que contendrá los archivos de origen de la documentación ( <code>docs</code>es el valor predeterminado para la configuración de <a href="https://www.mkdocs.org/user-guide/configuration/#docs_dir">docs_dir</a> ). En este momento, la <code>docs</code> carpeta solo contiene una única página de documentación, llamada <code>index.md</code>.</p>
 <p>MkDocs viene con un dev-server incorporado que le permite obtener una vista previa de su documentación mientras trabaja en ella. Asegúrese de estar en el mismo directorio que el <code>mkdocs.yml</code> archivo de configuración y luego inicie el servidor ejecutando el <code>mkdocs serve</code> comando:</p>
-<pre><code class="language-bash">mkdocs serve
-</code></pre>
-<p><img alt="" src="../ANEXOS/Pasted%20image%2020211023091511.png" />
+<p><div class="highlight"><pre><span></span><code>mkdocs serve
+</code></pre></div>
+<img alt="" src="../ANEXOS/Pasted%20image%2020211023091511.png" />
 Abra <code>http://127.0.0.1:8000/</code>en su navegador y verá que se muestra la página de inicio predeterminada:</p>
 <hr />
 <h2 id="build">Build</h2>
 <p>Eso luce bien. Está listo para implementar el primer paso de su <code>MkLorum</code> documentación. Primero construye la documentación:</p>
-<pre><code class="language-bash">mkdocs build
-</code></pre>
+<div class="highlight"><pre><span></span><code>mkdocs build
+</code></pre></div>
 <p>Esto creará un nuevo directorio, llamado <code>site</code>. Eche un vistazo dentro del directorio:</p>
-<pre><code class="language-bash">$ ls site
+<div class="highlight"><pre><span></span><code>$ ls site
 about  fonts  index.html  license  search.html
 css    img    js          mkdocs   sitemap.xml
-</code></pre>
+</code></pre></div>
 <h3 id="elegir-otra-carpeta">Elegir otra carpeta</h3>
-<pre><code class="language-bash">mkdocs build -d docs-obsi-pub
-</code></pre>
+<div class="highlight"><pre><span></span><code>mkdocs build -d docs-obsi-pub
+</code></pre></div>
 <h2 id="fonts">Fonts:</h2>
 <p><a href="https://www.mkdocs.org/getting-started/#building-the-site">https://www.mkdocs.org/getting-started/#building-the-site</a></p>
                 
