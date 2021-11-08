@@ -309,6 +309,19 @@
     2. AGREGANDO PIPs necesarios:
   </a>
   
+    <nav class="md-nav" aria-label="2. AGREGANDO PIPs necesarios:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#issue-con-django-heroku" class="md-nav__link">
+    ISSUE con django-heroku
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -974,23 +987,17 @@
 </code></pre></div>
 <h2 id="2-agregando-pips-necesarios"><strong>2.</strong> AGREGANDO PIPs necesarios:</h2>
 <div class="highlight"><pre><span></span><code>pip install gunicorn
- <span class="sb">```</span>
-
- <span class="sb">```</span>bash
-pip install psycopg2-binary
- <span class="sb">```</span>
-
- <span class="sb">```</span>bash
-pip install django-heroku
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>pip install psycopg2-binary
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>pip install django-heroku
 </code></pre></div>
 <p>In one line:</p>
-<p><div class="highlight"><pre><span></span><code>pip install gunicorn <span class="o">&amp;&amp;</span> pip install psycopg2-binary <span class="o">&amp;&amp;</span> pip install django-heroku
- <span class="sb">```</span>
-
-<span class="c1">#### ISSUE con django-heroku</span>
-Solution:
-<span class="sb">```</span>bash
-sudo apt-get install --reinstall libpq-dev
+<div class="highlight"><pre><span></span><code>pip install gunicorn <span class="o">&amp;&amp;</span> pip install psycopg2-binary <span class="o">&amp;&amp;</span> pip install django-heroku
+</code></pre></div>
+<h4 id="issue-con-django-heroku">ISSUE con django-heroku</h4>
+<p>Solution:
+<div class="highlight"><pre><span></span><code>sudo apt-get install --reinstall libpq-dev
 </code></pre></div>
 Font: <a href="https://stackoverflow.com/questions/11618898/pg-config-executable-not-found?page=2&amp;tab=Votes">https://stackoverflow.com/questions/11618898/pg-config-executable-not-found?page=2&amp;tab=Votes</a></p>
 <hr />
