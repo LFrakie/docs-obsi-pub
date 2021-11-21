@@ -18,7 +18,7 @@
     
     
       
-        <title>PRACTICA API REST - DOCS LFRAKIE</title>
+        <title>DockerFile - DOCS LFRAKIE</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#serializadores" class="md-skip">
+        <a href="#1-creando-un-dockerfile" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              PRACTICA API REST
+              DockerFile
             
           </span>
         </div>
@@ -287,14 +287,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
       
@@ -317,7 +315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../DEPLOY%20TO%20HEROKU/" class="md-nav__link">
+      <a href="../../DJANGO/DEPLOY%20TO%20HEROKU/" class="md-nav__link">
         DEPLOY TO HEROKU
       </a>
     </li>
@@ -331,7 +329,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../INIT/" class="md-nav__link">
+      <a href="../../DJANGO/INIT/" class="md-nav__link">
         INIT
       </a>
     </li>
@@ -343,47 +341,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          PRACTICA API REST
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../DJANGO/PRACTICA%20API%20REST/" class="md-nav__link">
         PRACTICA API REST
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#serializadores" class="md-nav__link">
-    SERIALIZADORES
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -395,7 +357,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Practica/" class="md-nav__link">
+      <a href="../../DJANGO/Practica/" class="md-nav__link">
         Practica
       </a>
     </li>
@@ -409,7 +371,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Project%20dj-prods-api/" class="md-nav__link">
+      <a href="../../DJANGO/Project%20dj-prods-api/" class="md-nav__link">
         Project dj prods api
       </a>
     </li>
@@ -429,12 +391,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -455,11 +419,54 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../DOCKER/DockerFile/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          DockerFile
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         DockerFile
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-creando-un-dockerfile" class="md-nav__link">
+    1 Creando un Dockerfile
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abrir-terminal-de-un-contenedor" class="md-nav__link">
+    Abrir terminal de un contenedor
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1118,26 +1125,27 @@
               
                 
                 
-                  <h1>PRACTICA API REST</h1>
+                  <h1>DockerFile</h1>
                 
-                <p>Instala los paquetes de django en el entorno virtual
-<div class="highlight"><pre><span></span><code>pip install django
+                <h2 id="1-creando-un-dockerfile">1 Creando un <strong>Dockerfile</strong></h2>
+<p><strong>Dockerfile</strong> nos sirve para construir nuestra imagen
+<div class="highlight"><pre><span></span><code><span class="k">FROM</span> <span class="s">ubuntu:20.04</span>
+<span class="k">MAINTAINER</span><span class="s"> Frank frankwilsonknow@gmail.com</span>
+<span class="k">ARG</span> <span class="nv">DEBIAN_FRONTEND</span><span class="o">=</span>noninteractive
+<span class="k">RUN</span> apt-get update
+<span class="k">RUN</span> apt-get -y install apache2
+<span class="k">EXPOSE</span><span class="s"> 80</span>
+<span class="k">CMD</span> /usr/sbin/apache2ctl -D FOREGROUND
 </code></pre></div></p>
-<p>Instalando Django Rest Framework
-<div class="highlight"><pre><span></span><code>pip install djangorestframework
-</code></pre></div></p>
-<p>Enlistar requirements de nuestro entorno variable en un txt. 
-<div class="highlight"><pre><span></span><code>pip freeze &gt; requirements.txt
-</code></pre></div></p>
-<hr />
-<p>Instalar los requisitos.
-<div class="highlight"><pre><span></span><code>pip install -r requirements.txt
-</code></pre></div></p>
-<hr />
-<p>Run Server on LAN
-<div class="highlight"><pre><span></span><code>python3 manage.py runserver <span class="m">0</span>.0.0.0:8000
-</code></pre></div></p>
-<h2 id="serializadores">SERIALIZADORES</h2>
+<p>Nos hubicamos en la misma carpeta de donde está nuestro <strong>Dockerfile</strong> y ejecutamos este codigo apra construir nuestra <strong>imagen</strong>. </p>
+<p><div class="highlight"><pre><span></span><code>sudo docker build -t Nombre_de_Imagen .
+</code></pre></div>
+Luego de que se construya vamos a verificar con el comando <code>sudo docker images</code> la existencia de nuestra nueva imagen creada.</p>
+<div class="highlight"><pre><span></span><code>sudo docker run -dit -p <span class="m">8053</span>:80 --name nuevo-nombre Nombre_de_Imagen
+</code></pre></div>
+<h2 id="abrir-terminal-de-un-contenedor">Abrir terminal de un contenedor</h2>
+<div class="highlight"><pre><span></span><code>sudo docker <span class="nb">exec</span> -it nombre-contenedor /bin/bash
+</code></pre></div>
                 
               
               
@@ -1157,7 +1165,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Pie">
       
         
-        <a href="../INIT/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: INIT" rel="prev">
+        <a href="../../DJANGO/Project%20dj-prods-api/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Project dj prods api" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1166,20 +1174,20 @@
               <span class="md-footer__direction">
                 Anterior
               </span>
-              INIT
+              Project dj prods api
             </div>
           </div>
         </a>
       
       
         
-        <a href="../Practica/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Practica" rel="next">
+        <a href="../../DPI/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: TRASH-CLI (papelera)" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Siguiente
               </span>
-              Practica
+              TRASH-CLI (papelera)
             </div>
           </div>
           <div class="md-footer__button md-icon">
