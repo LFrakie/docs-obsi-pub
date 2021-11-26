@@ -18,7 +18,7 @@
     
     
       
-        <title>INIT - DOCS LFRAKIE</title>
+        <title>INSTALL - DOCS LFRAKIE</title>
       
     
     
@@ -68,6 +68,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#instalar-zsh" class="md-skip">
+          Saltar a contenido
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -96,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              INIT
+              INSTALL
             
           </span>
         </div>
@@ -220,14 +225,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
       
       
@@ -248,19 +251,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../ANGULAR/INIT/" class="md-nav__link">
         INIT
       </a>
-      
     </li>
   
 
@@ -272,7 +267,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Proint/" class="md-nav__link">
+      <a href="../../ANGULAR/Proint/" class="md-nav__link">
         Proint
       </a>
     </li>
@@ -1078,12 +1073,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15" type="checkbox" id="__nav_15" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15" type="checkbox" id="__nav_15" checked>
       
       
       
@@ -1104,11 +1101,102 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../ZSH/INSTALL/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          INSTALL
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         INSTALL
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instalar-zsh" class="md-nav__link">
+    Instalar zsh
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-install-oh-my-zsh" class="md-nav__link">
+    2 Install - OH MY ZSH
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-install-theme-powerlevel10k" class="md-nav__link">
+    3 Install Theme - powerlevel10k
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-plugins" class="md-nav__link">
+    4 Plugins
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    -------------------
+  </a>
+  
+    <nav class="md-nav" aria-label="-------------------">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conflicto-tmux-con-zsh-powerlevel10k" class="md-nav__link">
+    CONFLICTO TMUX CON ZSH - powerlevel10k
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esto-es-para-mostrar-tmux-por-si-no-se-logra-ver-el-archivo" class="md-nav__link">
+    esto es para mostrar tmux por si no se logra ver el archivo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iniciar-con" class="md-nav__link">
+    Iniciar con
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1133,10 +1221,63 @@
               
                 
                 
-                  <h1>INIT</h1>
-                
-                <p>ng serve --sourceMap=false --host=0.0.0.0 --disable-host-check </p>
-<p>ng serve --host=0.0.0.0 --disable-host-check </p>
+                <h2 id="instalar-zsh">Instalar zsh</h2>
+<div class="highlight"><pre><span></span><code>sudo apt install zsh
+</code></pre></div>
+<p>Verificamo version:
+<div class="highlight"><pre><span></span><code>zsh --version
+</code></pre></div></p>
+<h2 id="2-install-oh-my-zsh">2 Install - OH MY ZSH</h2>
+<div class="highlight"><pre><span></span><code>sh -c <span class="s2">&quot;</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh<span class="k">)</span><span class="s2">&quot;</span>
+</code></pre></div>
+<p>Una vez instalado, buscamos el archivo <strong>.zshrc</strong> y editamos ZSH_THEME con nuestro tema de preferencia.
+<div class="highlight"><pre><span></span><code><span class="nv">ZSH_THEME</span><span class="o">=</span><span class="s2">&quot;agnoster&quot;</span>
+</code></pre></div></p>
+<h2 id="3-install-theme-powerlevel10k">3 Install Theme - powerlevel10k</h2>
+<div class="highlight"><pre><span></span><code>git clone --depth<span class="o">=</span><span class="m">1</span> https://github.com/romkatv/powerlevel10k.git <span class="si">${</span><span class="nv">ZSH_CUSTOM</span><span class="k">:-</span><span class="nv">$HOME</span><span class="p">/.oh-my-zsh/custom</span><span class="si">}</span>/themes/powerlevel10k
+</code></pre></div>
+<p>Buscamos el archivo <strong>.zshrc</strong> y editamos ZSH_THEME con nuestro el tema de  powerlevel10k de esta manera:
+<div class="highlight"><pre><span></span><code><span class="nv">ZSH_THEME</span><span class="o">=</span><span class="s2">&quot;powerlevel10k/powerlevel10k&quot;</span>
+</code></pre></div></p>
+<p>despues de esto reiniciamos zsh y veremos la personalización que necesitamos.
+<img alt="" src="../ANEXOS/Pasted%20image%2020211125220914.png" /></p>
+<p>Podemos usar este comando para volver a reconfigurar la apariencia de nuestro <strong>powerlevel10k</strong>
+<div class="highlight"><pre><span></span><code>p10k configure
+</code></pre></div></p>
+<p>Elegimos la <strong>opción 1</strong>:
+<img alt="" src="../ANEXOS/Pasted%20image%2020211125222027.png" /></p>
+<p>Le damos a <strong>yes</strong>
+<img alt="" src="../ANEXOS/Pasted%20image%2020211125222110.png" /></p>
+<h2 id="4-plugins">4 Plugins</h2>
+<p>Es posible que no podamos ejecutar algunos comandos y se peude deber a los plugins que necesita para ello vamos a buscamos el archivo <strong>.zshrc</strong> y agregaremos dentro de <strong>plugins</strong> lo que necesitamos.
+<img alt="" src="../ANEXOS/Pasted%20image%2020211125222718.png" /></p>
+<p>FONTS: 
+- Tutorial Principal: <a href="https://www.youtube.com/watch?v=5qNDJu1ek-A&amp;ab_channel=Fazt">https://www.youtube.com/watch?v=5qNDJu1ek-A&amp;ab_channel=Fazt</a>
+- Oh my zsh: <a href="https://github.com/ohmyzsh/ohmyzsh">https://github.com/ohmyzsh/ohmyzsh</a>
+- powerlevel10k: <a href="https://github.com/romkatv/powerlevel10k">https://github.com/romkatv/powerlevel10k</a>
+- temas: <a href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes">https://github.com/ohmyzsh/ohmyzsh/wiki/Themes</a></p>
+<h2 id="-">-------------------</h2>
+<p>FoNt import: WSL | DOCS </p>
+<h3 id="conflicto-tmux-con-zsh-powerlevel10k">CONFLICTO TMUX CON ZSH - powerlevel10k</h3>
+<p>No muestra los colores y el diseño adecuadamente
+solución:</p>
+<p>1 configurar </p>
+<p>~/.tmux.conf </p>
+<h1 id="esto-es-para-mostrar-tmux-por-si-no-se-logra-ver-el-archivo">esto es para mostrar tmux por si no se logra ver el archivo</h1>
+<p>tmux show -g &gt; ~/.tmux.conf</p>
+<p>2 agregar este valor:
+set -g default-terminal "xterm-256color"</p>
+<h1 id="iniciar-con">Iniciar con</h1>
+<p>tmux -2 </p>
+<p>fuente: https://unix.stackexchange.com/questions/1045/getting-256-colors-to-work-in-tmux</p>
+<p>Ruta Para configurar   |  zsh 
+nano ~/.zshrc</p>
+<p>Configurar thema p10k
+p10k configure</p>
+<p>FUENTE RECOMENDADA: iosevka NF
+https://www.programmingfonts.org/#iosevk</p>
+<p>herramienta por instalar: https://pythonautomationtutorial.com/python-oh-my-zsh </p>
+<p>FONT GUIA instalación completa: https://www.youtube.com/watch?v=5qNDJu1ek-A&amp;ab_channel=LupitaCode </p>
                 
               
               
@@ -1156,7 +1297,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Pie">
       
         
-        <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="Anterior: Bienvenido a MkDocs" rel="prev">
+        <a href="../../TMUX/INDEX/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: INDEX" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1165,26 +1306,11 @@
               <span class="md-footer__direction">
                 Anterior
               </span>
-              Bienvenido a MkDocs
+              INDEX
             </div>
           </div>
         </a>
       
-      
-        
-        <a href="../Proint/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Proint" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Siguiente
-              </span>
-              Proint
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
       
     </nav>
   

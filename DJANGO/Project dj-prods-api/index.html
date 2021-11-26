@@ -443,8 +443,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-registrar-aplicacion-y-drf" class="md-nav__link">
-    4 Registrar Aplicacion y DRF
+  <a href="#4-registrar-aplicacion" class="md-nav__link">
+    4 Registrar Aplicacion
   </a>
   
 </li>
@@ -1222,6 +1222,54 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15" type="checkbox" id="__nav_15" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_15">
+          ZSH
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="ZSH" data-md-level="1">
+        <label class="md-nav__title" for="__nav_15">
+          <span class="md-nav__icon md-icon"></span>
+          ZSH
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ZSH/INSTALL/" class="md-nav__link">
+        INSTALL
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1287,7 +1335,7 @@ LAN:
 <p>| Para Server on LAN podemos o usar ngk necesitamos habilitar los hosts en <strong>JprodsApi/DJprodsApi/settings.py</strong>
 <div class="highlight"><pre><span></span><code><span class="n">ALLOWED_HOSTS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;*&#39;</span><span class="p">]</span>
 </code></pre></div></p>
-<h2 id="4-registrar-aplicacion-y-drf">4 Registrar Aplicacion y DRF</h2>
+<h2 id="4-registrar-aplicacion">4 Registrar Aplicacion</h2>
 <p>1 Nos dirigimos a <strong>JprodsApi/DJprodsApi/settings.py</strong> y agregamos a</p>
 <div class="highlight"><pre><span></span><code><span class="nv">INSTALLED_APPS</span> <span class="o">=</span> <span class="o">[</span>
     <span class="c1">#... </span>
@@ -1366,7 +1414,7 @@ Deberiamos de ver productos en nuestro admin al correr nuestro servidor.
 <span class="kn">from</span> <span class="nn">.models</span> <span class="kn">import</span> <span class="n">Producto</span>
 
 <span class="k">class</span> <span class="nc">ProductoViewSet</span> <span class="p">(</span><span class="n">viewsets</span><span class="o">.</span><span class="n">ModelViewSet</span><span class="p">):</span>
-    <span class="n">queryset</span><span class="o">-</span><span class="n">Producto</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+    <span class="n">queryset</span><span class="o">=</span><span class="n">Producto</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
     <span class="n">serializer_class</span> <span class="o">=</span> <span class="n">ProductoSerializer</span>
 </code></pre></div>
 <h2 id="9-urls-o-rutas">9 URLS o Rutas</h2>
@@ -1392,7 +1440,7 @@ Deberiamos de ver productos en nuestro admin al correr nuestro servidor.
 </code></pre></div>
 <h2 id="10-drf-permisos-de-escritura-y-paginate">10 DRF Permisos De Escritura y Paginate</h2>
 <p>Permisos de escritura
-1 Agreganos el siguiente codigo al final de <strong>JprodsApi/DJprodsApi/settings.py</strong>:</p>
+1 Agregamos el siguiente codigo al final de <strong>JprodsApi/DJprodsApi/settings.py</strong>:</p>
 <p><div class="highlight"><pre><span></span><code><span class="c1"># Esto hace que se limite el acceso segun lo configuremos</span>
 <span class="nv">REST_FRAMEWORK</span> <span class="o">=</span> <span class="o">{</span>
 <span class="s1">&#39;DEFAULT_PERMISSION_CLASSES&#39;</span>: <span class="o">[</span>
@@ -1483,12 +1531,13 @@ admin.site.register<span class="o">(</span>Producto, ProductoAdmin<span class="o
 font: https://www.stackhawk.com/blog/django-cors-guide/</p>
 <div class="highlight"><pre><span></span><code>pip install django-cors-headers
 </code></pre></div>
-<p>**</p>
 <p>En settings.py
 <img alt="" src="../ANEXOS/Pasted%20image%2020211119072059.png" /></p>
-<p>'corsheaders',
-<img alt="" src="../ANEXOS/Pasted%20image%2020211119072117.png" /></p>
-<p>'corsheaders.middleware.CorsMiddleware',
+<p>Agregar esto mas
+<div class="highlight"><pre><span></span><code><span class="s1">&#39;corsheaders.middleware.CorsMiddleware&#39;</span>,
+</code></pre></div>
+<img alt="" src="../ANEXOS/Pasted%20image%2020211119072117.png" />
+Y las rutas que tendran acceso:
 <img alt="" src="../ANEXOS/Pasted%20image%2020211119072143.png" /></p>
 <div class="highlight"><pre><span></span><code><span class="n">CORS_ALLOWED_ORIGINS</span> <span class="o">=</span> <span class="p">[</span>
 
