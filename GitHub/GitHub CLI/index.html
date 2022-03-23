@@ -857,6 +857,67 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#create-new-repo" class="md-nav__link">
+    Create New Repo
+  </a>
+  
+    <nav class="md-nav" aria-label="Create New Repo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crear-con-parametros" class="md-nav__link">
+    Crear Con Parametros
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crear-en-organization" class="md-nav__link">
+    Crear En Organization:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eliminar-repositorio" class="md-nav__link">
+    Eliminar repositorio
+  </a>
+  
+    <nav class="md-nav" aria-label="Eliminar repositorio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#borrar-sin-confirmar" class="md-nav__link">
+    Borrar Sin confirmar
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eliminar-en-organization" class="md-nav__link">
+    Eliminar En Organization:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-repositorios" class="md-nav__link">
+    List Repositorios
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1410,6 +1471,42 @@
 <div class="highlight"><pre><span></span><code>sudo apt update
 sudo apt install gh
 </code></pre></div>
+<h2 id="create-new-repo">Create New Repo</h2>
+<div class="highlight"><pre><span></span><code>gh repo create REPONAME 
+</code></pre></div>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code>gh repo create test-repo
+</code></pre></div>
+<h3 id="crear-con-parametros">Crear Con Parametros</h3>
+<div class="highlight"><pre><span></span><code>gh repo create my-repo-name --public
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Crea un nuevo repositorio remoto y lo clona localmente</span>
+gh repo create my-project --private --clone
+</code></pre></div>
+<h3 id="crear-en-organization">Crear En Organization:</h3>
+<div class="highlight"><pre><span></span><code>gh repo create dpicloud/test-repo --public 
+</code></pre></div>
+<p>Font: https://cli.github.com/manual/gh_repo_create</p>
+<hr />
+<h2 id="eliminar-repositorio">Eliminar repositorio</h2>
+<div class="highlight"><pre><span></span><code>gh repo delete test-repo 
+</code></pre></div>
+<h3 id="borrar-sin-confirmar">Borrar Sin confirmar</h3>
+<div class="highlight"><pre><span></span><code>gh repo delete test-repo --confirm
+</code></pre></div>
+<h3 id="eliminar-en-organization">Eliminar En Organization:</h3>
+<div class="highlight"><pre><span></span><code>gh repo delete dpicloud/test-repo
+</code></pre></div>
+<hr />
+<h2 id="list-repositorios">List Repositorios</h2>
+<div class="highlight"><pre><span></span><code>gh repo list <span class="o">[</span>&lt;owner&gt;<span class="o">]</span> <span class="o">[</span>flags<span class="o">]</span>
+</code></pre></div>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code>gh repo list
+</code></pre></div>
+<p>In Organization:
+<div class="highlight"><pre><span></span><code>gh repo list dpicloud
+</code></pre></div></p>
                 
               
               
